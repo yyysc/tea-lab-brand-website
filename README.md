@@ -91,11 +91,7 @@ tea-lab-brand-website/
 
 ## 在线预览
 
-项目可以通过 GitHub Pages 部署为静态网站。
-
-部署完成后，可将在线地址填写在这里：
-
-`https://yyysc.github.io/tea-lab-brand-website/`
+https://yyysc.github.io/tea-lab-brand-website/
 
 ## 项目说明
 
