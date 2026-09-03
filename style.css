@@ -1,0 +1,1145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f5f1;
+    color: #2d2d2d;
+    overflow-x: hidden;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+	/* display: grid;
+	grid-template-columns: 1fr auto 1fr; */
+    align-items: center;
+    padding: 0 8%;
+    background: rgba(255,255,255,0.75);
+    
+    border-bottom:
+    1px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(20px);
+    z-index: 99999;
+	transition: 0.4s;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #c08b5c;
+	
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 40px;
+	
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color: #2d2d2d;
+    transition: 0.3s;
+}
+
+.desktop-nav a:hover {
+    color: #c08b5c;
+}
+
+.desktop-nav a.active{
+    color: #c08b5c;
+    font-weight: 600;
+    position: relative;
+}
+
+.desktop-nav a.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background: #c08b5c;
+    border-radius: 10px;
+}
+
+/* ========================= TOP COVER ========================= */
+.top-cover{
+    width: 100%;
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.35),
+    rgba(0,0,0,0.35)),
+    url('mike-tea/images/about.png')
+    center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 8%;
+	z-index: 1;
+}
+
+.top-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.top-cover-text{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.top-cover-text span{
+    letter-spacing: 5px;
+    color: #e7c9a9;
+    font-size: 14px;
+}
+
+.top-cover-text h1{
+    font-size: 88px;
+    line-height: 1.1;
+    margin: 30px 0;
+}
+
+.top-cover-text p{
+    font-size: 22px;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 40px;
+}
+
+.top-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cover-btn1,
+.cover-btn2{
+    padding: 18px 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.cover-btn1{
+    background: #c08b5c;
+    color: white;
+}
+
+.cover-btn2{
+    background: white;
+    color: #2d2d2d;
+}
+
+.cover-btn1:hover,
+.cover-btn2:hover{
+    transform: translateY(-5px);
+}
+
+/* section 通用标题 */
+.section-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-title span {
+    color: #c08b5c;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+/* products 产品区 */
+.products {
+    padding: 120px 8%;
+}
+
+.card {
+    background: rgba(255,255,255,0.8);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 30px;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.card-content span {
+    background: #f1e5d9;
+    padding: 8px 18px;
+    border-radius: 30px;
+    color: #c08b5c;
+    font-size: 14px;
+}
+
+/* about 关于我们 */
+.about {
+    padding: 120px 8%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-img,
+.about-text {
+    width: 50%;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.about-text span {
+    color: #c08b5c;
+    letter-spacing: 3px;
+}
+
+.about-text h2 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.about-text p {
+    color: #666;
+    line-height: 2;
+    font-size: 18px;
+}
+
+/* stats 数据统计 */
+.stats {
+    padding: 100px 8%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box h2 {
+    font-size: 70px;
+    color: #c08b5c;
+}
+
+.stat-box p {
+    color: #777;
+    margin-top: 10px;
+}
+
+/* banner 横幅 */
+.banner-section {
+    height: 80vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
+    url('mike-tea/images/bg.png') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.banner-text h2 {
+    font-size: 70px;
+    color: white;
+    line-height: 1.2;
+}
+
+/* store 门店 */
+.store {
+    padding: 120px 8%;
+}
+
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.store-card {
+    background: white;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.4s;
+}
+
+.store-card:hover {
+    transform: translateY(-10px);
+}
+
+.store-card h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.store-card p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.store-card button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #c08b5c;
+    color: white;
+    cursor: pointer;
+}
+
+/* contact 联系表单 */
+.contact {
+    padding: 120px 8%;
+}
+
+form {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+form input,
+form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background: white;
+}
+
+form textarea {
+    height: 180px;
+    resize: none;
+}
+
+form button {
+    padding: 18px;
+    border: none;
+    border-radius: 50px;
+    background: #c08b5c;
+    color: white;
+    cursor: pointer;
+}
+
+/* footer 页脚 */
+footer {
+    background: white;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+footer h2 {
+    color: #c08b5c;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+footer span {
+    color: #999;
+}
+
+/* ========================= MODAL 弹窗 ========================= */
+.menu-modal,
+.order-modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: 9999;
+}
+
+.menu-modal.active,
+.order-modal.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-box,
+.order-box{
+    width: 90%;
+    max-width: 1200px;
+    background: #fffaf5;
+    border-radius: 40px;
+    padding: 60px;
+    position: relative;
+    animation: modalShow 0.5s ease;
+}
+
+@keyframes modalShow{
+    from{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-btn{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #999;
+}
+
+.modal-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.modal-card{
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.modal-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.modal-card h3{
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+.modal-card p{
+    color: #777;
+    margin: 10px 0;
+}
+
+.modal-card span{
+    color: #c08b5c;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* ========================= BRAND PAGE 品牌页 ========================= */
+.brand-hero,
+.join-hero{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+    linear-gradient(
+    rgba(255,255,255,0.55),
+    rgba(255,255,255,0.55)
+    ),
+    url('mike-tea/images/bg.png')
+    center/cover;
+	position: relative;
+	z-index: 1;
+}
+
+.brand-hero-text span,
+.join-hero-text span{
+    color: #c08b5c;
+    letter-spacing: 4px;
+}
+
+.brand-hero-text h1,
+.join-hero-text h1{
+    font-size: 82px;
+    line-height: 1.1;
+    margin: 30px 0;
+}
+
+.brand-hero-text p,
+.join-hero-text p{
+    color: #666;
+    font-size: 18px;
+}
+
+/* brand-story 品牌故事 */
+.brand-story{
+    padding: 120px 8%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.story-left,
+.story-right{
+    width: 50%;
+}
+
+.story-left img{
+    width: 100%;
+    border-radius: 40px;
+}
+
+.story-right span{
+    color: #c08b5c;
+    letter-spacing: 4px;
+}
+
+.story-right h2{
+    font-size: 58px;
+    margin: 25px 0;
+}
+
+.story-right p{
+    color: #666;
+    line-height: 2;
+    font-size: 18px;
+}
+
+/* brand-values 品牌价值观 */
+.brand-values{
+    padding: 0 8% 120px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.value-card{
+    background: white;
+    padding: 60px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.value-card h3{
+    font-size: 36px;
+    color: #c08b5c;
+    margin-bottom: 20px;
+}
+/* ========================= JOIN 加盟页 ========================= */
+.join-hero{
+    width: 100%;
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.35),
+    rgba(0,0,0,0.35)),
+    url('mike-tea/images/join2.png')
+    center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    position: relative;
+	z-index: 1;
+}
+
+.join-hero-text{
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.join-hero-text span{
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: #e7c9a9;
+}
+
+.join-hero-text h1{
+    font-size: 82px;
+    line-height: 1.1;
+    margin: 25px 0;
+}
+
+.join-hero-text p{
+    font-size: 20px;
+    color: rgba(255,255,255,0.85);
+}
+
+.join-intro{
+    padding: 120px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+    background: #f8f5f1;
+}
+
+.intro-left{
+    flex: 1;
+}
+
+.intro-left span{
+    color: #c08b5c;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.intro-left h2{
+    font-size: 60px;
+    margin-top: 25px;
+    line-height: 1.2;
+    color: #2d2d2d;
+}
+
+.intro-right{
+    flex: 1;
+}
+
+.intro-right p{
+    font-size: 18px;
+    line-height: 2;
+    color: #666;
+}
+
+.join-stats{
+    padding: 0 8% 120px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    background: #f8f5f1;
+}
+
+.stat-card{
+    background: white;
+    padding: 60px 40px;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.4s;
+}
+
+.stat-card:hover{
+    transform: translateY(-10px);
+}
+
+.stat-card h2{
+    font-size: 52px;
+    color: #c08b5c;
+    margin-bottom: 15px;
+}
+
+.stat-card p{
+    color: #666;
+    font-size: 18px;
+}
+
+.requirements{
+    padding: 120px 8%;
+    background: white;
+    text-align: center;
+}
+
+.requirements span{
+    color: #c08b5c;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.requirements h2{
+    font-size: 60px;
+    margin: 25px 0 80px;
+    line-height: 1.2;
+}
+
+.requirements-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.require-card{
+    background: #f8f5f1;
+    padding: 50px;
+    border-radius: 24px;
+    text-align: left;
+    transition: 0.4s;
+}
+
+.require-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.require-card h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2d2d2d;
+}
+
+.require-card p{
+    color: #666;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.support{
+    padding: 120px 8%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    background: #f8f5f1;
+}
+
+.support-left{
+    flex: 1;
+}
+
+.support-left img{
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.support-right{
+    flex: 1;
+}
+
+.support-right span{
+    color: #c08b5c;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.support-right h2{
+    font-size: 58px;
+    line-height: 1.2;
+    margin: 25px 0 35px;
+}
+
+.support-right ul{
+    list-style: none;
+}
+
+.support-right ul li{
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #555;
+    position: relative;
+    padding-left: 30px;
+}
+
+.support-right ul li::before{
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #c08b5c;
+    font-size: 22px;
+}
+
+.process{
+    padding: 120px 8%;
+    background: white;
+    text-align: center;
+}
+
+.process span{
+    color: #c08b5c;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.process h2{
+    font-size: 58px;
+    margin: 25px 0 80px;
+}
+
+.process-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.process-card{
+    background: #f8f5f1;
+    padding: 50px 30px;
+    border-radius: 24px;
+    transition: 0.4s;
+}
+
+.process-card:hover{
+    transform: translateY(-10px);
+}
+
+.process-card h3{
+    font-size: 48px;
+    color: #c08b5c;
+    margin-bottom: 20px;
+}
+
+.process-card p{
+    font-size: 18px;
+    color: #555;
+}
+
+.join-form{
+    padding: 120px 8%;
+    background: #f8f5f1;
+}
+
+.form-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.form-title span{
+    color: #c08b5c;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+
+.form-title h2{
+    font-size: 60px;
+    line-height: 1.2;
+    margin-top: 25px;
+}
+
+.join-form form{
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.join-form input,
+.join-form textarea{
+    width: 100%;
+    padding: 22px 25px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    font-size: 16px;
+    background: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.join-form textarea{
+    height: 180px;
+    resize: none;
+}
+
+.join-form input:focus,
+.join-form textarea:focus{
+    border-color: #c08b5c;
+}
+
+.join-form button{
+    width: fit-content;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    background: #c08b5c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.join-form button:hover{
+    transform: translateY(-5px);
+    background: #b17849;
+}
+
+/* 浮动动画 */
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* ========================= MOBILE MENU ========================= */
+.menu-toggle{
+    display: none;
+    font-size: 34px;
+    cursor: pointer;
+    z-index: 999999;
+	position: relative;
+}
+
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+    z-index: 9999999;
+}
+
+.mobile-menu.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu a{
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 34px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover{
+    color: #c08b5c;
+    transform: translateY(-4px);
+}
+
+.close-menu{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 48px;
+    cursor: pointer;
+    color: #2d2d2d;
+}
+
+/* ========================= 响应式 ========================= */
+@media(max-width:992px){
+    .top-cover-text h1{
+        font-size: 60px;
+    }
+}
+
+@media(max-width:768px){
+    .desktop-nav{
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header{
+        padding: 0 6%;
+    }
+    .mobile-menu a{
+        font-size: 28px;
+    }
+
+    .top-cover{
+        height: 90vh;
+    }
+    .top-cover-text h1{
+        font-size: 42px;
+    }
+    .top-buttons{
+        flex-direction: column;
+    }
+    .cover-btn1,
+    .cover-btn2{
+        width: 220px;
+    }
+
+    .section-title h2 {
+        font-size: 36px;
+    }
+    .about-text h2 {
+        font-size: 42px;
+    }
+    .banner-text h2 {
+        font-size: 42px;
+    }
+
+    .join-hero{
+        height: 80vh;
+    }
+    .join-hero-text h1{
+        font-size: 42px;
+    }
+    .process-grid{
+        grid-template-columns: 1fr;
+    }
+    .intro-left h2,
+    .requirements h2,
+    .support-right h2,
+    .process h2,
+    .form-title h2{
+        font-size: 34px;
+    }
+    .stat-card,
+    .require-card,
+    .process-card{
+        padding: 40px 30px;
+    }
+}
+
+@media(max-width:1200px){
+    .story-right h2{
+        font-size: 54px;
+    }
+    .story-left img{
+        width: 100%;
+    }
+}
+
+@media(max-width:992px){
+    .brand-story{
+        flex-direction: column;
+        text-align: center;
+    }
+    .story-left,
+    .story-right{
+        width: 100%;
+    }
+    .story-left img{
+        width: 85%;
+        max-width: 520px;
+    }
+    .story-right p{
+        max-width: 700px;
+        margin: auto;
+    }
+}
+
+@media(max-width:768px){
+    .brand-story{
+        padding: 100px 6%;
+    }
+    .story-right h2{
+        font-size: 42px;
+    }
+    .story-right p{
+        font-size: 16px;
+    }
+    .story-left img{
+        width: 100%;
+    }
+}
+
+/* ================= LANGUAGE SWITCH ================= */
+
+.header-actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+	
+}
+
+.lang-switch{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.5);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.lang-switch:hover{
+    background: rgba(255,255,255,0.75);
+    transform: translateY(-2px);
+}
+
+.lang-switch span{
+    font-size: 14px;
+    color: #777;
+    transition: 0.3s;
+}
+
+.lang-switch .active-lang{
+    color: #c08b5c;
+    font-weight: 600;
+}

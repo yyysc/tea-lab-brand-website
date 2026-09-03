@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TEA LAB</title>
+
+    <!-- 字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- aos -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="mike-tea/images/log.ico">
+
+</head>
+
+<body>
+
+    <!-- 导航栏 -->
+
+    <header id="header">
+    
+        <div class="logo">
+            TEA LAB
+        </div>
+    
+
+        <!-- PC NAV -->
+    
+        <nav class="desktop-nav">
+    
+            <a href="index.html" class="active"
+               data-en="Home"
+               data-zh="首页">
+               Home
+            </a>
+    
+            <a href="brand.html" 
+               data-en="Brand" 
+               data-zh="品牌">
+               Brand
+            </a>
+    
+            <a href="index.html#products" 
+               data-en="Products" 
+               data-zh="产品">
+               Products
+            </a>
+    
+            <a href="index.html#store" 
+               data-en="Store" 
+               data-zh="门店">
+               Store
+            </a>
+    
+            <a href="join.html" 
+               data-en="Franchise" 
+               data-zh="加盟">
+               Franchise
+            </a>
+    
+            <a href="index.html#contact" 
+               data-en="Contact" 
+               data-zh="联系我们">
+               Contact
+            </a>
+    
+        </nav>
+    
+    
+        <!-- MENU BUTTON -->
+    
+        <div class="header-actions">
+        
+            <div class="lang-switch" id="langToggle">
+        
+                <span class="active-lang">
+                    EN
+                </span>
+        
+                <span>
+                    中文
+                </span>
+        
+            </div>
+        
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+        
+        </div>
+    
+    </header>
+    
+    
+    <!-- MOBILE MENU -->
+    
+    <div class="mobile-menu" id="mobileMenu">
+    
+        <div class="close-menu" id="closeMenu">
+            ×
+        </div>
+    
+        <a href="index.html" 
+           data-en="Home" 
+           data-zh="首页">
+           Home
+        </a>
+    
+        <a href="brand.html" 
+           data-en="Brand" 
+           data-zh="品牌">
+           Brand
+        </a>
+    
+        <a href="index.html#products" 
+           data-en="Products" 
+           data-zh="产品">
+           Products
+        </a>
+    
+        <a href="index.html#store" 
+           data-en="Store" 
+           data-zh="门店">
+           Store
+        </a>
+    
+        <a href="join.html" 
+           data-en="Franchise" 
+           data-zh="加盟">
+           Franchise
+        </a>
+    
+        <a href="index.html#contact" 
+           data-en="Contact" 
+           data-zh="联系我们">
+           Contact
+        </a>
+    
+    </div>
+
+<!-- TOP COVER -->
+
+<section class="top-cover">
+
+    <div class="top-overlay"></div>
+
+    <div class="top-cover-text">
+
+        <span data-en="TEA LAB" data-zh="TEA LAB">TEA LAB</span>
+
+        <h1 data-en="Fresh Tea New Experience" data-zh="新鲜茶饮 全新体验">
+            Fresh Tea <br>
+            New Experience
+        </h1>
+
+        <p data-en="Premium Milk Tea Brand For Young People" data-zh="年轻人的高端奶茶品牌">
+            年轻人的高端奶茶品牌
+        </p>
+
+        <div class="top-buttons">
+
+            <a href="brand.html">
+                <button class="cover-btn1" 
+                        data-en="Discover Brand" 
+                        data-zh="了解品牌">
+                    Discover Brand
+                </button>
+            </a>
+
+            <a href="join.html">
+                <button class="cover-btn2" 
+                        data-en="Franchise Now" 
+                        data-zh="立即加盟">
+                    Franchise Now
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- 产品 -->
+
+    <section class="products" id="products">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <span data-en="POPULAR DRINKS" data-zh="热门饮品">POPULAR DRINKS</span>
+
+            <h2 data-en="Best Seller Collection" data-zh="畅销精选">Best Seller Collection</h2>
+
+        </div>
+
+        <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+
+                <!-- card -->
+
+                <div class="swiper-slide">
+
+                    <div class="card">
+
+                        <img src="mike-tea/images/tea1.png" alt="">
+
+                        <div class="card-content">
+
+                            <h3 data-en="Berry Milk Tea" data-zh="草莓奶茶">Berry Milk Tea</h3>
+
+                            <p data-en="Fresh Strawberry" data-zh="草莓奶茶">草莓奶茶</p>
+
+                            <span>HOT</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- card -->
+
+                <div class="swiper-slide">
+
+                    <div class="card">
+
+                        <img src="mike-tea/images/tea2.png">
+
+                        <div class="card-content">
+
+                            <h3 data-en="Coconut Latte" data-zh="椰香拿铁">Coconut Latte</h3>
+
+                            <p data-en="Fresh Coconut" data-zh="椰香拿铁">椰香拿铁</p>
+
+                            <span>NEW</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- card -->
+
+                <div class="swiper-slide">
+
+                    <div class="card">
+
+                        <img src="mike-tea/images/tea3.png">
+
+                        <div class="card-content">
+
+                            <h3 data-en="Matcha Cheese" data-zh="芝士抹茶">Matcha Cheese</h3>
+
+                            <p data-en="Premium Matcha" data-zh="芝士抹茶">芝士抹茶</p>
+
+                            <span>TOP</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 品牌 -->
+
+    <section class="about" id="about">
+
+        <div class="about-img" data-aos="fade-right">
+
+            <img src="mike-tea/images/join.png" alt="">
+
+        </div>
+
+        <div class="about-text" data-aos="fade-left">
+
+            <span data-en="ABOUT BRAND" data-zh="关于品牌">ABOUT BRAND</span>
+
+            <h2 data-en="Brewed For Gen Z" data-zh="专为 Z世代打造">
+                Brewed For <br>
+                Gen Z
+            </h2>
+
+            <p data-en="TEA LAB focuses on creating a more youthful milk tea brand, adhering to high-quality tea leaves and fresh ingredients, combining design sense with drink experience to bring consumers a more advanced and healthy milk tea experience." 
+               data-zh="TEA LAB 专注于打造更加年轻化的奶茶品牌，坚持使用高品质茶叶与新鲜原料，将设计感与饮品体验结合，为消费者带来更高级、更健康的奶茶体验。">
+
+                TEA LAB 专注于打造更加年轻化的奶茶品牌，
+                坚持使用高品质茶叶与新鲜原料，
+                将设计感与饮品体验结合，
+                为消费者带来更高级、更健康的奶茶体验。
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- 数据 -->
+
+    <section class="stats">
+
+        <div class="stat-box" data-aos="fade-up">
+
+            <h2>120+</h2>
+
+            <p data-en="Stores" data-zh="门店">Stores</p>
+
+        </div>
+
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+
+            <h2>1M+</h2>
+
+            <p data-en="Customers" data-zh="用户">Customers</p>
+
+        </div>
+
+        <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+
+            <h2>50+</h2>
+
+            <p data-en="New Drinks" data-zh="新品">New Drinks</p>
+
+        </div>
+
+    </section>
+
+    <!-- 大图区域 -->
+
+    <section class="banner-section">
+
+        <div class="banner-overlay"></div>
+
+        <div class="banner-text">
+
+            <h2 data-en="Every Sip Is Happiness" data-zh="每一口 都是愉悦">
+                Every Sip <br>
+                Is Happiness
+            </h2>
+
+        </div>
+
+    </section>
+
+    <!-- 门店 -->
+
+    <section class="store" id="store">
+
+        <div class="section-title">
+
+            <span data-en="STORE" data-zh="门店">STORE</span>
+
+            <h2 data-en="Find Our Stores" data-zh="寻找我们的门店">Find Our Stores</h2>
+
+        </div>
+
+        <div class="store-grid">
+
+            <div class="store-card">
+
+                <h3>Nanjing</h3>
+
+                <p data-en="Jiangning Flagship Store" data-zh="江宁旗舰店">江宁旗舰店</p>
+
+                <button data-en="View Store" data-zh="查看门店">View Store</button>
+
+            </div>
+
+            <div class="store-card">
+
+                <h3>Shanghai</h3>
+
+                <p data-en="Xuhui Central Store" data-zh="徐汇中心店">徐汇中心店</p>
+
+                <button data-en="View Store" data-zh="查看门店">View Store</button>
+
+            </div>
+
+            <div class="store-card">
+
+                <h3>Beijing</h3>
+
+                <p data-en="Chaoyang Store" data-zh="朝阳店">朝阳店</p>
+
+                <button data-en="View Store" data-zh="查看门店">View Store</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 联系 -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+
+            <span data-en="CONTACT" data-zh="联系我们">CONTACT</span>
+
+            <h2 data-en="Get In Touch" data-zh="取得联系">Get In Touch</h2>
+
+        </div>
+
+        <form>
+
+            <input type="text" 
+                   data-en="Your Name" 
+                   data-zh="您的姓名"
+                   placeholder="Your Name">
+
+            <input type="email" 
+                   data-en="Your Email" 
+                   data-zh="您的邮箱"
+                   placeholder="Your Email">
+
+            <textarea data-en="Your Message" 
+                      data-zh="您的留言"
+                      placeholder="Your Message"></textarea>
+
+            <button type="submit"
+                    data-en="Send Message"
+                    data-zh="发送留言">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+<!-- MENU MODAL -->
+
+<div class="menu-modal" id="menuModal">
+
+    <div class="menu-box">
+
+        <div class="close-btn" id="closeMenu">
+            ×
+        </div>
+
+        <h2 data-en="Signature Menu" data-zh="招牌菜单">
+            Signature Menu
+        </h2>
+
+        <div class="modal-grid">
+
+            <!-- item -->
+
+            <div class="modal-card">
+
+                <img src="images/tea1.jpg">
+
+                <h3 data-en="Berry Milk Tea" data-zh="草莓奶茶">Berry Milk Tea</h3>
+
+                <p data-en="Fresh Strawberry" data-zh="新鲜草莓">Fresh Strawberry</p>
+
+                <span>￥19</span>
+
+            </div>
+
+            <!-- item -->
+
+            <div class="modal-card">
+
+                <img src="images/tea2.jpg">
+
+                <h3 data-en="Coconut Latte" data-zh="椰香拿铁">Coconut Latte</h3>
+
+                <p data-en="Coconut Coffee" data-zh="椰香咖啡">Coconut Coffee</p>
+
+                <span>￥22</span>
+
+            </div>
+
+            <!-- item -->
+
+            <div class="modal-card">
+
+                <img src="images/tea3.jpg">
+
+                <h3 data-en="Matcha Cheese" data-zh="芝士抹茶">Matcha Cheese</h3>
+
+                <p data-en="Premium Matcha" data-zh="优质抹茶">Premium Matcha</p>
+
+                <span>￥24</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- footer -->
+
+    <footer>
+
+        <h2>TEA LAB</h2>
+
+        <p data-en="Future Milk Tea Experience" data-zh="未来奶茶体验">
+            Future Milk Tea Experience
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">YouTube</a>
+
+        </div>
+
+        <span data-en="© 2026 TEA LAB All Rights Reserved" data-zh="© 2026 TEA LAB 保留所有权利">
+            © 2026 TEA LAB All Rights Reserved
+        </span>
+
+    </footer>
+
+    <!-- js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
